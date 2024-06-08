@@ -78,7 +78,7 @@ class DBStorage:
     def get(self, cls, id):
         """A method to retrieve one object:"""
         if cls and id:
-            if cls in classes.values() and isinstance(is, str):
+            if cls in classes.values() and isinstance(cls, str):
                 cls_obj = self.all(cls)
                 for key, value in cls_obj.items():
                     if key.split('.')[1] == id:
